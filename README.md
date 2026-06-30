@@ -16,33 +16,6 @@ Security: Transitioning away from legacy OIDC/IRSA to modern EKS Pod Identity fo
 
 Reliability: S3-backed remote state with DynamoDB state locking to prevent concurrency collisions.
 
-📂 Infrastructure Layout
-The project follows a "Modules vs. Implementation" pattern to ensure consistency and maintainability across environments.
-'''text
-.
-|-- main
-|   |-- backend.tf
-|   |-- main.tf
-|   |-- output.tf
-|   |-- provider.tf
-|   |-- terraform.tfvars
-|   `-- variable.tf
-`-- modules
-    |-- ecr
-    |   |-- ecr.tf
-    |   |-- output.tf
-    |   `-- variables.tf
-    |-- eks
-    |   |-- data.tf
-    |   |-- eks.tf
-    |   |-- node_groups.tf
-    |   `-- variable.tf
-    `-- vpc
-        |-- output.tf
-        |-- variables.tf
-        `-- vpc.tf
-
-
 🏗️ Key Modules
 🌐 VPC Module: Standardizes networking for all environments, ensuring private/public subnet isolation.
 ☸️ EKS Module: Encapsulates Cluster provisioning, IAM roles, and managed node group orchestration.📦 ECR Module: Provides a centralized, secure repository for your container images.
