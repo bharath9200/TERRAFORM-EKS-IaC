@@ -18,7 +18,7 @@ Reliability: S3-backed remote state with DynamoDB state locking to prevent concu
 
 📂 Infrastructure Layout
 The project follows a "Modules vs. Implementation" pattern to ensure consistency and maintainability across environments.
-'''
+'''text
 .
 |-- main
 |   |-- backend.tf
@@ -41,7 +41,7 @@ The project follows a "Modules vs. Implementation" pattern to ensure consistency
         |-- output.tf
         |-- variables.tf
         `-- vpc.tf
-'''
+
 
 🏗️ Key Modules
 🌐 VPC Module: Standardizes networking for all environments, ensuring private/public subnet isolation.
