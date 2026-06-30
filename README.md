@@ -1,5 +1,5 @@
 # TERRAFORM-EKS-IaC
-☁️ Infrastructure as Code: Terraform EKS Foundation
+#☁️ Infrastructure as Code: Terraform EKS Foundation
 
 Scalable, Secure, and Production-Ready AWS Kubernetes Deployment
 Welcome to the TERRAFORM-EKS-IaC repository. This project serves as the foundational infrastructure layer for a high-availability EKS environment. By utilizing a hybrid approach—combining optimized modules for networking and granular resource control for compute—this setup ensures both operational efficiency and deep security.
